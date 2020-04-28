@@ -1,4 +1,4 @@
 ##########
 # CONFIG #
 ##########
-scoreboard players set System acToggle 1
+#scoreboard players set System acToggle 1
