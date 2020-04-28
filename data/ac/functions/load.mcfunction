@@ -1,2 +1,3 @@
 scoreboard objectives add acToggle dummy
-function ac:defuse
+scoreboard objectives add acFuse dummy
+#function ac:defuse
