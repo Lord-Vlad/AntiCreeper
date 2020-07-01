@@ -5,7 +5,7 @@ execute as @e[type=creeper,tag=acInRange] at @s unless score @s acFuse matches 0
 scoreboard players remove @e[tag=acInRange] acFuse 1
 
 execute if score @e[tag=acInRange,scores={acFuse=0},limit=1] acFuse matches 0 run gamerule mobGriefing false
-execute if score @e[tag=acInRange,scores={acFuse=0},limit=1] acFuse matches 0 unless entity @e[type=creeper,distance=1..7] run schedule function ac:gamerule 1s
+#execute if score @e[tag=acInRange,scores={acFuse=0},limit=1] acFuse matches 0 unless entity @e[type=creeper,distance=1..7] run schedule function ac:gamerule 1s
 execute if score @e[tag=acInRange,scores={acFuse=0},limit=1] acFuse matches 0 if entity @e[type=creeper,distance=1..7] run schedule function ac:gamerule 5s
 
 execute as @e[tag=acInRange] at @s unless entity @p[distance=..7] run scoreboard players reset @s acFuse
