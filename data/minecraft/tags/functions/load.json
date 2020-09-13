@@ -1,6 +1,7 @@
 
 {
   "values": [
-    "ac:load"
+    "ac:load",
+    "ac:config"
   ]
 }
